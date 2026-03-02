@@ -1,6 +1,6 @@
 {
   "name": "Robert-Pangilinan-Website",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://rpangil.github.io/",
   "private": true,
   "dependencies": {
@@ -41,6 +41,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.3.0"
   }
 }
