@@ -59,14 +59,16 @@ function App()
                     <p>Some of the technologies I use:</p>
                     <div className={`${styles.progressBarContainer} ${styles.contain}`}>
                         <div className={styles.left}>
+                            <ProgressBar completed={100} label='Troubleshooting' />
                             <ProgressBar completed={90} label='IT Support' />
-                            <ProgressBar completed={90} label='Apple Repair' />
                             <ProgressBar completed={90} label='HTML' />
                             <ProgressBar completed={90} label='CSS' />
                             <ProgressBar completed={85} label='JavaScript' />
+                            <ProgressBar completed={85} label='Bootstrap' />
                         </div>
                         <div className={styles.right}>
-                            <ProgressBar completed={85} label='Bootstrap' />
+                            <ProgressBar completed={85} label='CLI' />
+                            <ProgressBar completed={80} label='Apple Repair' />
                             <ProgressBar completed={80} label='React' />
                             <ProgressBar completed={80} label='jQuery' />
                             <ProgressBar completed={70} label='MySQL' />

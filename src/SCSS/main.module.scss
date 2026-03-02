@@ -282,7 +282,12 @@
 {
     .slider
     {
-        .right {min-height: 370px;}
+        .right 
+        {
+            min-height: 370px;
+            
+            &.GS {min-height: 902px;}
+        }
     }
 }
 

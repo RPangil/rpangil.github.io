@@ -15,7 +15,7 @@ function ProgressBar(props)
                 <span className={styles.label}>{props.label}</span>
             </div>
             <span 
-                    className={styles.label}
+                    className={`${styles.label} ${styles.valueLabel}`}
                     role="progressBar"
                     aria-valuenow={props.completed}
                     aria-valuemin={0}

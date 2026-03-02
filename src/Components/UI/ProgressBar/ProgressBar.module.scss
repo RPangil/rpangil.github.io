@@ -2,9 +2,9 @@
 
 .container
 {
+    position: relative;
     width: 100%;
     margin-top: 1rem;
-    padding-right: 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,4 +23,10 @@
 {
     font-size: 0.8rem;
     line-height: 1.12rem;
+}
+
+.valueLabel
+{
+    position: absolute;
+    right: 0.5rem;
 }
