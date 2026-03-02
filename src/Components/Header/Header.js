@@ -100,7 +100,7 @@ function Header()
                     >
                         Projects
                     </Link>
-                    <a href='/docs/RobertAndrewPangilinan-Resume.pdf' target='_blank' rel='noreferrer'>Resume</a>
+                    <a href='/docs/RobertPangilinanResumeIT.pdf' target='_blank' rel='noreferrer'>Resume</a>
                 </div>
                 <div className={styles.menu}>
                     <button aria-label='Menu' onClick={menuIsClicked}>

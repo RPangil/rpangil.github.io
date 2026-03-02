@@ -50,19 +50,23 @@ function App()
                     <p>
                         While in college, I worked as a college assistant that helps making and maintaining webpages for the different college departments. 
                         After graduating college, I was able to work in a start-up and most recently a website agency. 
-                        Recently, I'm working on a couple of projects for an F1 league that wants a revamped website and a private project, while looking for a job.
+                        While I was laid off, I worked on a couple of projects for an F1 league that wants a revamped website and a private project, while looking for a job.
+                        Recently, I was promoted as a Senior Repair Technician, where I coach and develop agents to improve their customer service and repair skills, 
+                        while also assisting in PC troubleshooting and repairs, and with the customer device check-in process.
                     </p>
                 </Container>
-                <Container title="Technologies" id='Skills'>
+                <Container title="Skills" id='Skills'>
                     <p>Some of the technologies I use:</p>
                     <div className={`${styles.progressBarContainer} ${styles.contain}`}>
                         <div className={styles.left}>
+                            <ProgressBar completed={90} label='IT Support' />
+                            <ProgressBar completed={90} label='Apple Repair' />
                             <ProgressBar completed={90} label='HTML' />
                             <ProgressBar completed={90} label='CSS' />
                             <ProgressBar completed={85} label='JavaScript' />
-                            <ProgressBar completed={85} label='Bootstrap' />
                         </div>
                         <div className={styles.right}>
+                            <ProgressBar completed={85} label='Bootstrap' />
                             <ProgressBar completed={80} label='React' />
                             <ProgressBar completed={80} label='jQuery' />
                             <ProgressBar completed={70} label='MySQL' />
@@ -78,15 +82,32 @@ function App()
                             <div className={`${styles.company} ${activeSlide.activeIndex === 2 ? styles.active:''}`} onClick={() => companyClicked(2)}>Element Zero</div>
                             <div className={`${styles.company} ${activeSlide.activeIndex === 1 ? styles.active:''}`} onClick={() => companyClicked(1)}>LaGuardia Community College</div>
                         </div>
-                        <div className={styles.right}>
-                            <div className={`${styles.slide} ${activeSlide.activeIndex === 4 ? styles.active : ''}`} key={4}>
-                                <h3 className={`${styles.smdText} ${styles.med}`}>Consultation Agent - <span>Geek Squad</span></h3>
+                        <div className={`${styles.right} ${activeSlide.activeIndex === 4 ? styles.GS:''}`}>
+                            <div className={`${styles.slide} ${styles.GS} ${activeSlide.activeIndex === 4 ? styles.active : ''}`} key={4}>
+                                <h3 className={`${styles.smdText} ${styles.med}`}>Senior Repair Technician - <span>Geek Squad</span></h3>
                                 <p className={styles.smText}>Curent</p>
                                 <ul>
-                                    <li>Lead the micro-market in productivity in January</li>
-                                    <li>Lead the store in productivity</li>
+                                    <li>Coach and develop agents to develop their customer service and repair skills.</li>
+                                    <li>Assist in PC troubleshooting and repairs, and with customer device check-in process.</li>
+                                </ul>
+                                <h3 className={`${styles.smdText} ${styles.med}`}>Advanced Repair Agent - <span>Geek Squad</span></h3>
+                                <p className={styles.smText}>Oct 2024 - August 2025</p>
+                                <ul>
+                                    <li>Lead the micro-market in utilization in February and March.</li>
+                                    <li>Troubleshoot or resolve technological issues that customers have with their devices.</li>
+                                    <li>Replace defective computer hardware like RAM, HDDs, or batteries.</li>
+                                    <li>Build or upgrade customer PC towers.</li>
+                                    <li>Performed iPhone in-store repairs.</li>
+                                    <li>Promoted to Senior Repair Technician due to demonstrated leadership skills and training.</li>
+                                </ul>
+                                <h3 className={`${styles.smdText} ${styles.med}`}>Consultation Agent - <span>Geek Squad</span></h3>
+                                <p className={styles.smText}>October 2023 - October 2024</p>
+                                <ul>
+                                    <li>Lead the micro-market in productivity in January.</li>
+                                    <li>Lead the store in productivity.</li>
                                     <li>Troubleshoot or resolve technological issues that customers have with their devices.</li>
                                     <li>Communicate with the repair agent, if a device is being checked-in, and provide detailed notes on the issues of the device.</li>
+                                    <li>Promoted to Advanced Repair Agent because of demonstrated technical/repair knowledge.</li>
                                 </ul>
                             </div>
 
@@ -149,13 +170,13 @@ function App()
                                 <a href='https://www.ketoretcap.com/' target='_blank' rel='noreferrer' className={`${styles.link} ${styles.smText}`}>Visit Site</a>
                             </div>
                         </div>
-                        <div className={`${styles.item} ${styles.novawulf}`}>
+                        {/* <div className={`${styles.item} ${styles.novawulf}`}>
                             <div className={styles.details}>
                                 <h3 className={`${styles.title} ${styles.mdText} ${styles.med} ${styles.red}`}>Novawulf</h3>
                                 <p className={`${styles.description} ${styles.smText}`}>HTML, CSS, jQuery, Perl</p>
                                 <a href='https://novawulf.io/' target='_blank' rel='noreferrer' className={`${styles.link} ${styles.smText}`}>Visit Site</a>
                             </div>
-                        </div>
+                        </div> */}
                         <div className={`${styles.item} ${styles.acs}`}>
                             <div className={styles.details}>
                                 <h3 className={`${styles.title} ${styles.mdText} ${styles.med} ${styles.red}`}>Aero Capital Solutions</h3>
